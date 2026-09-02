@@ -1,2 +1,0 @@
-Hello Niharika
-I am learning Python
