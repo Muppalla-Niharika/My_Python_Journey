@@ -69,29 +69,59 @@ a = 2/4
 print(a)
 b = 2//4
 print(b)
-""" 
+
 #lower upper case
 name = "NIHA"
 print(name.lower())
 #strip
 name = "      Harshi "
 print(f"Hi {name.strip()}")
+#replace
+name = "Niharika"
+print(name.replace("Niharika", "Gopi Priya"))
 
+#. Take a number as input and print whether it's even or odd.
+num = int(input("Enter num: "))
+if num%2 == 0:
+    print("Even")
+else:
+    print("Odd")
+ 
+#. Write a for loop that prints only even numbers from 1 to 20.
+for i in range(1,21):
+    if i%2 ==0:
+        print(i)
+    else:
+        continue
+"""
+"""#Write a while loop that stops as soon as it hits 7 in:
+count = 1
+while count <=11:
+    if count ==7:
+        break
+    print(count)
+    count += 1
 
+numbers = [3,5,7,9,11]
+count =0
+while count < len(numbers):
+    if numbers[count]==7:
+        break
+    print(numbers[count])
+    count +=1
+"""
+s = "Niharika"
+print(s[0:4]) 
 
+s = "  Python Learning  "
+print(s.strip().upper())
 
+name = "Niha"
+age = 20
+print(f"{name} is {age} Years Old")
 
-
-
-
-
-
-
-
-
-
-
-
+s = "HelloWorld"
+print(s[::-1])
 
 
 
