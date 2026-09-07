@@ -1,4 +1,4 @@
-
+'''
 names = ['niha','priya','prerana','kalyani']
 print(names[:])
 print(names[1:-1])
@@ -66,4 +66,79 @@ print(len(name))
 subjects = ['Maths','Physics','Chemistry','Python','Html']
 marks = [ 85,96,93,97,86]
 for i in range(5):
-    print("Subject",i+1,":",subjects[i],"- Marks: ",marks[i])
+    print("Subject",i+1,":",subjects[i],"- Marks: ",marks[i])   
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
