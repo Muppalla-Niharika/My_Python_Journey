@@ -1,4 +1,4 @@
-'''
+
 class Car:
     def __init__(self,name,price):
         self.name = name
@@ -42,7 +42,7 @@ class Student:
         print(f"{self.name} got these many {self.marks} Marks!")
 Std = Student("Niha",96)
 Std.display()
-'''
+
 class Shape:
     def area(self):
         print("Area not defined")
