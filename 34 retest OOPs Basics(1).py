@@ -33,7 +33,7 @@ d = Dog()
 d.sound()
 c = Cat()
 c.sound()
-'''
+
 class Student:
     def __init__(self,name,marks):
         self.name = name
@@ -42,6 +42,17 @@ class Student:
         print(f"{self.name} got these many {self.marks} Marks!")
 Std = Student("Niha",96)
 Std.display()
+'''
+class Shape:
+    def area(self):
+        print("Area not defined")
+
+class Square(Shape):
+    def area(self):
+        print("Area = side * side")
+
+sq = Square()
+sq.area()
 
 
 
