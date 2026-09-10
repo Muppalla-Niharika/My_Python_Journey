@@ -62,7 +62,7 @@ circle.display()
 circle.area()
 rectangle.display()
 rectangle.area()
-'''
+
 #
 class Person():
     def __init__(self,name,age):
@@ -74,13 +74,36 @@ class Student(Person):
     def __init__(self,name,age,marks):
         super().__init__(name,age)
         self.marks = marks
-    def display(self):
+    def get_grade(self):
         print(f"Hello! This is {self.name} and I'm {self.age} is years old and also i got {self.marks}!")
+
 std = Student("Niha", 19 , 98)
 std.introduce()
-std.display()
+std.get_grade()
 
-    
+'''
+class Animal():
+    def __init__(self,name,sound):
+        self.name = name
+        self.sound = sound
+    def make_sound(self):
+        print(f"{self.name} is {self.sound}ing")
+class Dog(Animal):
+    def display(self):
+        print(f"{self.name} is {self.sound}ing")
+class Cat(Animal):
+    def display(self):
+        print(f"{self.name} is {self.sound}ing")
+class Bird(Animal):
+    def display(self):
+        print(f"{self.name} is {self.sound}ing")
+dog = Dog("Bam" , "Bark")
+cat = Cat("Lary" , "Meow")
+bird = Bird("Crow", "Shout")
+dog.display()
+cat.display()
+bird.display()
+
 
 
 
