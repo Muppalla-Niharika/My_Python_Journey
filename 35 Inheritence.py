@@ -31,7 +31,7 @@ dog.info()
 print(dog.name)
 print(dog.sound)
 print(dog.breed)
-'''
+
 #Create a parent class Shape with:
 #a property color
 #a method display() that prints the color
@@ -43,16 +43,42 @@ class Shape:
     def display(self):
         print(f"Shape color is {self.color}")
 class Circle(Shape):
-    def __init__(self,color):
-        self.color = color
-        print(f"Circle is {self.color}")
+    def __init__(self,color,radius):
+        super().__init__(color)
+        self.radius = radius
+    def area(self):
+        print(f"Circlenarea = {3.14 * self.radius * self.radius}")
 class Rectangle(Shape):
-    def __init__(self,color):
-        self.color = color
-        print(f"Circle is {self.color}")
+    def __init__(self,color,length,breadth):
+        super().__init__(color)
+        self.length = length
+        self.breadth = breadth
+    def area(self):
+        print(f"Rectangle is = {self.length} * {self.breadth}")
 
-print(Circle)
-print(Rectangle)
+circle = Circle("Yellow", 2.5)
+rectangle = Rectangle("Blue", 8, 5)
+circle.display()
+circle.area()
+rectangle.display()
+rectangle.area()
+'''
+#
+class Person():
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def introduce(self):
+        print(f"Hello! This is {self.name} and I'm {self.age} is years old")
+class Student(Person):
+    def __init__(self,name,age,marks):
+        super().__init__(name,age)
+        self.marks = marks
+    def display(self):
+        print(f"Hello! This is {self.name} and I'm {self.age} is years old and also i got {self.marks}!")
+std = Student("Niha", 19 , 98)
+std.introduce()
+std.display()
 
     
 
