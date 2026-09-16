@@ -1,4 +1,4 @@
-'''
+
 class Animal:
     def __init__(self,name,sound):
         self.name = name
@@ -81,7 +81,7 @@ std = Student("Niha", 19 , 98)
 std.introduce()
 std.get_grade()
 
-'''
+
 class Animal():
     def __init__(self,name,sound):
         self.name = name
