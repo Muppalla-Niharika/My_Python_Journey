@@ -41,9 +41,37 @@ students = [
 result = min(students, key=lambda x: x[1])
 print(result)
 #max
+students = [
+    ("Niharika", 85),
+    ("Anu", 95),
+    ("Rahul", 75)
+]
+result = max(students, key=lambda x: x[1])
+print(result)
 
 
+square = lambda x: x * x
+print(square(5))
 
+add = lambda a, b: a + b
+print(add(10, 20))
 
+numbers = [1, 2, 3, 4, 5]
+result = map(lambda x: x * 2, numbers)
+print(list(result))
+
+numbers = [1, 2, 3, 4, 5, 6]
+result = filter(lambda x: x % 2 == 0, numbers)
+print(list(result))
+
+students = [
+    ("Niharika", 85),
+    ("Anu", 95),
+    ("Rahul", 75)
+]
+
+result = sorted(students, key=lambda x: x[1])
+
+print(result)
 
 
