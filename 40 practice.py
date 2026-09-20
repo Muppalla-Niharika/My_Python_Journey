@@ -64,7 +64,7 @@ students = [
 ]
 result = filter(lambda x: x[1] >= 35, students)
 print(list(result))
-'''
+
 try:
     with open("students.txt","w") as file:
         for i in range(3):
@@ -75,5 +75,191 @@ try:
         print(content)
 except FileNotFoundError:
     print("File not found!")
+
+def calculate_salary(salary):
+    salary_tax = salary * 0.8
+    return salary_tax
+salary = int(input("Enter your salary: "))
+sal = calculate_salary(salary)
+print(sal)
+
+salaries = [15000, 25000, 40000, 60000, 100000]
+result = map(lambda x: x * 0.8 , salaries)
+print(list(result))
+
+import random
+class Animal:
+    def __init__(self):
+        print(f"Animal Created")
+class Dog(Animal):
+    def __init__(self):
+        super().__init__()
+        dog_actions = ["fetching", "barking", "running"]
+        action1 = random.choice(dog_actions)
+        print(action1)
+class Cat(Animal):
+    def __init__(self):
+        super().__init__()
+        cat_actions = ["purring", "sleeping", "climbing"]
+        action2 = random.choice(cat_actions)
+        print(action2)
+dog = Dog()
+cat = Cat()
+
+
+def process_data():
+    numbers = [-5, 2, -3, 4, 6, -1]
+    if not numbers:
+        raise ValueError("List is empty")
+    result1 = filter(lambda x: x >0 , numbers)
+    result2 = map(lambda x: x **2 , result1)
+    return(list(result2))
+try:
+    result = process_data()
+    print(result)
+except ValueError:
+    print("List is empty")
+
+students = [
+    ("Niharika", 85),
+    ("Priya", 72),
+    ("Sravani", 95),
+    ("Divya", 60)
+]
+result = sorted(students , key = lambda x: x[1],reverse = True)
+print(result)
+'''
+
+def analyze_numbers(numbers):
+    result1 = max(numbers, key=lambda x: x)
+    result2 = min(numbers, key=lambda x: x)
+    return result1, result2
+numbers = [10, 25, 4, 80, 15, 60]
+result = analyze_numbers(numbers)
+print(f"Highest:",result[0])
+print(f"Lowest:",result[1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
