@@ -1,4 +1,4 @@
-'''
+
 def analyze_list(numbers):
     total = sum(numbers)
     average = total/len(numbers)
@@ -128,7 +128,7 @@ students = [
 ]
 result = sorted(students , key = lambda x: x[1],reverse = True)
 print(result)
-'''
+
 
 def analyze_numbers(numbers):
     result1 = max(numbers, key=lambda x: x)
