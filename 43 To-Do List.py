@@ -42,3 +42,23 @@ def delete_task():
         print("Invalid task number!")
     except ValueError:
         print("Please enter a valid number!")
+def save_tasks():
+    with open("tasks.txt", "w") as file:
+        for task in tasks:
+            status = "done" if task["done"] else "pending"
+            file.write(f"{task['task']},{status}\n")
+    print("Tasks saved successfully!")
+def load_tasks():
+    try:
+        with open("tasks.txt", "r") as file:
+            for line in file:
+                line = line.strip()
+                if line:
+                    parts = line.split(",")
+                    task = parts[0]
+                    done = True if parts[1] == "done" else False
+                    tasks.append({"task": task, "done": done})
+        print("Tasks loaded successfully!")
+    except FileNotFoundError:
+        print("No saved tasks found!")
+
