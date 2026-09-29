@@ -1,4 +1,5 @@
-'''count = 1
+'''
+count = 1
 while count <= 5:
     if count == 3:
         count += 1
@@ -73,7 +74,7 @@ while password != "python123":
         break
     else:
         print("Wrong password!")
-'''
+
 numbers = []
 for i in range(5):
     num = int(input("Enter a num: "))
@@ -83,8 +84,14 @@ for i in range(5):
     print(f"Average:{average}")
     print(f"Highest:{max(numbers)}")
     print(f"Lowest:{min(numbers)}")
-
- 
+'''
+square_num = [i**2 for i in range(1,11)]
+print(square_num)
+odd_num = [i for i in range(1,21)if i%2 !=0]
+print(odd_num)
+import math
+names = ["niharika", "priya", "sravani"]
+uppercase_names = map()
 
 
 
